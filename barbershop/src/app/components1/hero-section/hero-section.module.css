@@ -13,11 +13,33 @@
     height: 100vh;
 }
 
+.textDiv {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
 
-/* .bookNow {
-    margin-top: 10vh;
+.textH1 {
+    font-size: 6em;
+    font-weight: 700;
+}
+
+.textH3 {
+    font-size: 2.5em;
+}
+
+.textP {
+    font-size: 1.2em;
+}
+
+.textButton {
+    margin-top: 20vh;
     background: #2a3562;
     border-radius: 10px;
-    font-size: 1.6em;
-    width: 16vw;
-} */
+    font-size: 1.5em;
+    width: 12vw;
+}

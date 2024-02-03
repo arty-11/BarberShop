@@ -11,22 +11,18 @@ export default function HeroSection() {
                 layers={[
                     { image: '/Barber-imgs/picture-1.jpg', speed: -80, scale: [0.6, 1.4]},
                     {
-                        speed: -15,
+                        speed: -20,
                         children: (
-                            <div>
-                                <h1>Hair Lounge</h1>
-                                <h3>Unisex Salon</h3>
-                                <p>London | Dagenham</p>
-                            </div>
+                            <section className={styles.textDiv} aria-labelledby='hair-lounge-hero-section'>
+                                <h1 className={styles.textH1} id='hair-lounge-hero-section'>Hair Lounge</h1>
+                                <h3 className={styles.textH3}>Unisex Salon</h3>
+                                <p className={styles.textP}>London | Dagenham</p>
+                                <button className={styles.textButton}>Book Now</button>
+                            </section>
                         ),
                     },
                 ]}
             >
-                <div>
-                    <h1>Hair Lounge</h1>
-                    <h3>Unisex Salon</h3>
-                    <h1>London | Dagenham</h1>
-                </div>
             </ParallaxBanner>
         </div>
     );
