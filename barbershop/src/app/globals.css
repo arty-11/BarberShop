@@ -8,6 +8,9 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
 /* @media (prefers-color-scheme: dark) {
 
 } */
