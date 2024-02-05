@@ -1,0 +1,19 @@
+.NavULFlexContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.NavLiFlexItems {
+    margin-right: 4vw;
+    font-size: 1.7em;
+    color: var(--white);
+}
+
+.NavLiFlexItems:hover {
+    opacity: 0.9;
+}
