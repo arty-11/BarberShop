@@ -1,17 +1,35 @@
-.NavULFlexContainer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 15%;
-    width: 100%;
+.NavHeader {
     position: fixed;
     z-index: 99;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: background-color 1.8s;
+}
+
+.NavHeaderTransparent {
+    background-color: rgb(84, 81, 81);
+    height: 11.5%;
+}
+
+.NavHeaderColour {
+    background-color: transparent;
+}
+
+.NavUlFlexContainer {
+    display: flex;
 }
 
 .NavLiFlexItems {
-    margin-right: 4vw;
-    font-size: 1.7em;
+    margin-right: 6vw;
+    font-size: 1.8em;
     color: var(--white);
+}
+
+.NavLiFlexItems:last-child {
+    margin-right: 1.5vw;
 }
 
 .NavLiFlexItems:hover {
