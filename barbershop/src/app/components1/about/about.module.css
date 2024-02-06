@@ -1,0 +1,50 @@
+.AboutMainHeading {
+    font-size: 5em;
+    margin-top: 3vh;
+    margin-left: 6vw;
+    margin-bottom: 24vh;
+    color: var(--headingGrey);
+}
+
+.AboutHeading {
+    margin-top: 10vh;
+    font-size: 2em;
+}
+
+.AboutFlexContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.AboutContainerText {
+    position: relative;
+    background-color: #f9f4f4;
+    width: 40vw;
+    height: 70vh;
+    top: 7vh;
+    left: 8vw;
+    z-index: 1;
+}
+
+.AboutContainerImage {
+    position: relative;
+    width: 45vw;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.AboutImage {
+    object-fit: cover;
+}
+
+.MarginLeft {
+    margin-left: 3vw;
+}
+
+.ParaMarginRight {
+    margin-right: 2vw;
+}
+
+.ParaMarginTop {
+    margin-top: 8vh;
+}
