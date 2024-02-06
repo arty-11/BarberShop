@@ -13,11 +13,15 @@ export default function HeroSection() {
                     {
                         speed: -20,
                         children: (
-                            <section className={styles.textDiv} aria-labelledby='hair-lounge-hero-section'>
-                                <h1 className={styles.textH1} id='hair-lounge-hero-section'>Hair Lounge</h1>
-                                <h3 className={styles.textH3}>Unisex Salon</h3>
-                                <p className={styles.textP}>London | Dagenham</p>
-                                <button className={styles.textButton}>Book Now</button>
+                            <section className={styles.textDiv} aria-labelledby='hero-section'>
+                                <div>
+                                    <h1 className={styles.textH1} id='hero-section'>Hair Lounge</h1>
+                                    <h3 className={styles.textH3}>Unisex Salon</h3>
+                                    <p className={styles.textP}>London | Dagenham</p>
+                                </div>
+                                <div>
+                                    <button className={styles.textButton}>Book Now</button>
+                                </div>
                             </section>
                         ),
                     },

@@ -1,5 +1,6 @@
 .NavHeader {
     position: fixed;
+    top: 0;
     z-index: 99;
     height: 15%;
     width: 100%;
@@ -9,12 +10,12 @@
     transition: background-color 1.8s;
 }
 
-.NavHeaderTransparent {
+.NavHeaderColour {
     background-color: rgb(84, 81, 81);
     height: 11.5%;
 }
 
-.NavHeaderColour {
+.NavHeaderTransparent {
     background-color: transparent;
 }
 

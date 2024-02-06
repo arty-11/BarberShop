@@ -26,13 +26,22 @@
 }
 
 .textButton {
-    margin-top: 14vh;
-    background: #2a3562;
+    background-color: #2a3562;
     border-radius: 10px;
     font-size: 1.5em;
     width: 12vw;
 }
 
 .textButton:hover {
-    font-weight: 500;
+    background-color: #1a2a69;
+}
+
+.textDiv div:first-child {
+    text-align: center;
+}
+
+.textDiv div:last-child {
+    text-align: center;
+    position: relative;
+    top: 12vh;
 }

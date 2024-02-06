@@ -28,13 +28,11 @@ export default function Navbar() {
 
     useEffect(() => {
         window.addEventListener('scroll', toggleScroll);
-        return () => {
-            window.removeEventListener('scroll', toggleScroll);
-        }
+        return () => window.removeEventListener('scroll', toggleScroll);
     })
 
     return (
-        <header className={changeHeadingColour ? [styles.NavHeaderTransparent, styles.NavHeader].join(" ") : [styles.NavHeaderColour, styles.NavHeader].join(" ")}>
+        <header className={changeHeadingColour ? [styles.NavHeaderColour, styles.NavHeader].join(" ") : [styles.NavHeaderTransparent, styles.NavHeader].join(" ")}>
             <nav aria-label="primary">
                 <menu className={styles.NavUlFlexContainer}>
                     {navLinks.map(navLink => (
