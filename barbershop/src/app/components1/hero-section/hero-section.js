@@ -5,7 +5,7 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 
 export default function HeroSection() {
     return (
-        <div>
+        <section>
             <ParallaxBanner
                 className={styles.parallaxBanner}
                 layers={[
@@ -13,21 +13,24 @@ export default function HeroSection() {
                     {
                         speed: -20,
                         children: (
-                            <section className={styles.textDiv} aria-labelledby='hero-section'>
+                            <div className={styles.textDiv}
+                            >
                                 <div>
-                                    <h1 className={styles.textH1} id='hero-section'>Hair Lounge</h1>
+                                    <h1 className={styles.textH1}>Hair Lounge</h1>
                                     <h3 className={styles.textH3}>Unisex Salon</h3>
                                     <p className={styles.textP}>London | Dagenham</p>
                                 </div>
                                 <div>
                                     <button className={styles.textButton}>Book Now</button>
                                 </div>
-                            </section>
+                            </div>
                         ),
                     },
                 ]}
             >
             </ParallaxBanner>
-        </div>
+        </section>
     );
 };
+
+// { speed: -10, children: <div style={{backgroundColor: "white", height: "20vh", width: "100vw", position: "relative", top: "100vh", transform: "rotate(3deg)" , overflowX: "hidden"}}></div>}

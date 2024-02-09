@@ -25,14 +25,22 @@
 
 .NavLiFlexItems {
     margin-right: 6vw;
-    font-size: 1.8em;
-    color: var(--white);
 }
 
 .NavLiFlexItems:last-child {
     margin-right: 1.5vw;
 }
 
-.NavLiFlexItems:hover {
+.NavLinks {
+    font-size: 1.8em;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.NavLinks:hover {
     text-decoration: underline;
+}
+
+.NavLinkisActive {
+    border: 1px solid red;
 }

@@ -30,6 +30,9 @@
     border-radius: 10px;
     font-size: 1.5em;
     width: 12vw;
+    transition: background-color 0.3s ease-in;
+    line-height: 2;
+    box-shadow: 2.5px 2.5px rgba(0,0,0,0.9);
 }
 
 .textButton:hover {

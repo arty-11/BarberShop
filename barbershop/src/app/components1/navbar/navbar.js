@@ -1,19 +1,21 @@
 'use client';
 
 //imports
-import Link from "next/link";
-import styles from './navbar.module.css';
+import styles from "./navbar.module.css";
 import { useEffect, useState } from "react";
+
+//components
+import Navlink from "./navlink.js";
 
 //navlinks
 const navLinks = [
     { id: "1", name: "About", path: "#about" },
     { id: "2", name: "Services", path: "#services" },
     { id: "3", name: "Contact", path: "/contact" },
-    { id: "4", name: "Book", path: "/" }
+    { id: "4", name: "Book", path: "/book" }
 ];
 
-
+//component
 export default function Navbar() {
     const [changeHeadingColour, setChangeHeadingColour] = useState(false);
 
@@ -34,15 +36,7 @@ export default function Navbar() {
     return (
         <header className={changeHeadingColour ? [styles.NavHeaderColour, styles.NavHeader].join(" ") : [styles.NavHeaderTransparent, styles.NavHeader].join(" ")}>
             <nav aria-label="primary">
-                <menu className={styles.NavUlFlexContainer}>
-                    {navLinks.map(navLink => (
-                        <li key={navLink.id} className={styles.NavLiFlexItems}>
-                            <Link href={navLink.path}>
-                                {navLink.name}
-                            </Link>
-                        </li>
-                    ))}
-                </menu>
+                    <Navlink navLinks={navLinks} styles={styles}  />
             </nav>
         </header>
      );

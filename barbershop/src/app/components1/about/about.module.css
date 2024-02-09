@@ -1,14 +1,9 @@
 .AboutMainHeading {
     font-size: 5em;
-    margin-top: 3vh;
+    margin-top: 10vh;
     margin-left: 6vw;
     margin-bottom: 24vh;
     color: var(--headingGrey);
-}
-
-.AboutHeading {
-    margin-top: 10vh;
-    font-size: 2em;
 }
 
 .AboutFlexContainer {
@@ -20,16 +15,27 @@
     position: relative;
     background-color: #f9f4f4;
     width: 40vw;
-    height: 70vh;
+    height: 0;
+    padding-bottom: 75vh;
     top: 7vh;
     left: 8vw;
     z-index: 1;
 }
 
+.AboutHeading {
+    margin-top: 10vh;
+    font-size: 2em;
+}
+
+.AboutText {
+    font-size: 0.9em;
+}
+
 .AboutContainerImage {
     position: relative;
     width: 45vw;
-    height: 85vh;
+    height: 0;
+    padding-bottom: 85vh;
     overflow: hidden;
 }
 
