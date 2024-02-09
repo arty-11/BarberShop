@@ -9,8 +9,8 @@ import Navlink from "./navlink.js";
 
 //navlinks
 const navLinks = [
-    { id: "1", name: "About", path: "#about" },
-    { id: "2", name: "Services", path: "#services" },
+    { id: "1", name: "About", path: "/#about" },
+    { id: "2", name: "Services", path: "/#services" },
     { id: "3", name: "Contact", path: "/contact" },
     { id: "4", name: "Book", path: "/book" }
 ];
