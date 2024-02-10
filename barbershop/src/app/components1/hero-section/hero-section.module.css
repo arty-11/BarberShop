@@ -58,14 +58,12 @@
     top: 12vh;
 }
 
-/* .whiteDiv {
-    background-color: #fff;
-    width: 100vw;
-    height: 22vh;
+.whiteDiv {
+    background-color: var(--white);
+    width: 150%;
+    height: 24vh;
     position: absolute;
-    bottom: -10vh;
-    left: -1vw;
+    bottom: -12vh;
     transform: rotate(5deg);
-    border: 1px solid red;
-    z-index: 99;
-} */
+    left: -20vw;
+}

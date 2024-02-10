@@ -13,7 +13,8 @@ export default function navlink({ navLinks, styles }) {
                     <li key={navLink.id} className={styles.NavLiFlexItems}>
                         <Link href={navLink.path} className={NavLinkisActive ? [styles.NavLinks, styles.NavLinkisActive].join(" ") : styles.NavLinks}>
                             {navLink.name}
-                        </Link></li>
+                        </Link>
+                    </li>
                 )
             })
             }
