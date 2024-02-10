@@ -2,6 +2,15 @@
     height: 100vh;
 }
 
+.textDivContainer {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 70vh;
+    width: 100%;
+}
+
 .textDiv {
     position: absolute;
     inset: 0;
@@ -48,3 +57,15 @@
     position: relative;
     top: 12vh;
 }
+
+/* .whiteDiv {
+    background-color: #fff;
+    width: 100vw;
+    height: 22vh;
+    position: absolute;
+    bottom: -10vh;
+    left: -1vw;
+    transform: rotate(5deg);
+    border: 1px solid red;
+    z-index: 99;
+} */
