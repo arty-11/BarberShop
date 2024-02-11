@@ -10,7 +10,7 @@ export default function About() {
     <section aria-labelledby="about" className={styles.aboutSectionContainer}>
       <div className={styles.divRight}></div>
       <div className={styles.divLeft}></div>
-      <h2 id="about" className="headingStyle">About Us</h2>
+      <h2 id="about" className={["headingStyle", styles.aboutMainHeading].join(" ")}>About Us</h2>
       <div className={styles.aboutFlexContainer}>
         <div className={styles.aboutContainerText}>
           <AboutText styles={styles} />

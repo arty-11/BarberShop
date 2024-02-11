@@ -18,6 +18,10 @@
     z-index: 1;
 }
 
+.aboutMainHeading {
+    margin-bottom: 24vh;
+}
+
 .aboutHeading {
     margin-top: 10vh;
     font-size: 2em;
