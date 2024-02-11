@@ -6,12 +6,12 @@ export default function navlink({ navLinks, styles }) {
     const pathname = usePathname();
 
     return (
-    <menu className={styles.NavUlFlexContainer}>
+    <menu className={styles.navUlFlexContainer}>
         {navLinks.map(navLink => {
             const NavLinkisActive = pathname.startsWith(navLink.path);
                 return (
-                    <li key={navLink.id} className={styles.NavLiFlexItems}>
-                        <Link href={navLink.path} className={NavLinkisActive ? [styles.NavLinks, styles.NavLinkisActive].join(" ") : styles.NavLinks}>
+                    <li key={navLink.id} className={styles.navLiFlexItems}>
+                        <Link href={navLink.path} className={NavLinkisActive ? [styles.navLinks, styles.navLinkisActive].join(" ") : styles.navLinks}>
                             {navLink.name}
                         </Link>
                     </li>

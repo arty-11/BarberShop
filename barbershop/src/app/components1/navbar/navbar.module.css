@@ -1,4 +1,4 @@
-.NavHeader {
+.navHeader {
     position: fixed;
     top: 0;
     z-index: 99;
@@ -10,37 +10,37 @@
     transition: background-color 1.8s;
 }
 
-.NavHeaderColour {
+.navHeaderColour {
     background-color: rgb(84, 81, 81);
     height: 11.5%;
 }
 
-.NavHeaderTransparent {
+.navHeaderTransparent {
     background-color: transparent;
 }
 
-.NavUlFlexContainer {
+.navUlFlexContainer {
     display: flex;
 }
 
-.NavLiFlexItems {
+.navLiFlexItems {
     margin-right: 6vw;
 }
 
-.NavLiFlexItems:last-child {
+.navLiFlexItems:last-child {
     margin-right: 1.5vw;
 }
 
-.NavLinks {
+.navLinks {
     font-size: 1.8em;
     color: var(--white);
     text-decoration: none;
 }
 
-.NavLinks:hover {
+.navLinks:hover {
     text-decoration: underline;
 }
 
-.NavLinkisActive {
+.navLinkisActive {
     border: 1px solid red;
 }

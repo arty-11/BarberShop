@@ -24,6 +24,14 @@ body {
   min-height: 100%;
 }
 
+.headingStyle {
+  font-size: 5em;
+  margin-top: 10vh;
+  margin-left: 6vw;
+  margin-bottom: 24vh;
+  color: var(--headingGrey);
+}
+
 /* @media (prefers-color-scheme: dark) {
 
 } */

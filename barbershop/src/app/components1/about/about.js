@@ -10,12 +10,12 @@ export default function About() {
     <section aria-labelledby="about" className={styles.aboutSectionContainer}>
       <div className={styles.divRight}></div>
       <div className={styles.divLeft}></div>
-      <h2 id="about" className={styles.AboutMainHeading}>About Us</h2>
-      <div className={styles.AboutFlexContainer}>
-        <div className={styles.AboutContainerText}>
+      <h2 id="about" className="headingStyle">About Us</h2>
+      <div className={styles.aboutFlexContainer}>
+        <div className={styles.aboutContainerText}>
           <AboutText styles={styles} />
         </div>
-        <div className={styles.AboutContainerImage}>
+        <div className={styles.aboutContainerImage}>
           <AboutImg styles={styles} />
         </div>
       </div>

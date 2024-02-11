@@ -8,7 +8,7 @@ export default function AboutImg({ styles }) {
         quality={100}
         sizes='(max-width:800px) 30vw, 40vw'
         alt="Barber cutting hair"
-        className={styles.AboutImage}
+        className={styles.aboutImage}
         priority
           />
   )

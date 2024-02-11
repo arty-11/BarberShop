@@ -34,7 +34,7 @@ export default function Navbar() {
     })
 
     return (
-        <header className={changeHeadingColour ? [styles.NavHeaderColour, styles.NavHeader].join(" ") : [styles.NavHeaderTransparent, styles.NavHeader].join(" ")}>
+        <header className={changeHeadingColour ? [styles.navHeaderColour, styles.navHeader].join(" ") : [styles.navHeaderTransparent, styles.navHeader].join(" ")}>
             <nav aria-label="primary">
                     <Navlink navLinks={navLinks} styles={styles}  />
             </nav>
