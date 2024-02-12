@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import { v4 as uuidv4 } from 'uuid';
 
 
-export default function navlink({ navLinks, styles }) {
+export default function Navlink({ navLinks, styles }) {
     const pathname = usePathname();
 
     return (

@@ -1,0 +1,42 @@
+.mttSectionContainer {
+    background-color: var(--black);
+}
+
+.mttMainHeading {
+    margin-bottom: 2em;
+}
+
+.mttFlexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 8em;
+}
+
+.mttFlexContainer > div  {
+    border: 1px solid #ff8210;
+    width: 18em;
+    height: 30em;
+    border-radius: 100px;
+}
+
+.mttImgContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.mttImg {
+    object-fit: cover;
+}
+
+.mttSocialMediaFlexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background-color: var(--black);
+    border-radius: 50px;
+}

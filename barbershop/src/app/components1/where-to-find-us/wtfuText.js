@@ -12,7 +12,7 @@ export default function WtfuText({ styles }) {
   return (
     <>
       <div className={styles.wtfuIconContainer}>
-        <WtfuIcon iconColour="black" styles={styles} />
+        <WtfuIcon iconColour="black" />
       </div>
       <div className={styles.wtfuTextContainer}>
         <p>{barbershopInfo.name}</p>
