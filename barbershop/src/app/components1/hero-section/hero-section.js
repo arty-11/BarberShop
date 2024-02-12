@@ -10,7 +10,7 @@ export default function HeroSection() {
         top: "0"
     }
 
-    const backgroundImg = {
+    const heroImg = {
         speed: -80,
         style: layerStyle,
         scale: [0.6, 1.4],
@@ -20,22 +20,22 @@ export default function HeroSection() {
     const whiteDiv = {
         speed: -1,
         style: layerStyle,
-        children: <div className={styles.whiteDiv}></div>
+        children: <div className={styles.hsWhiteDiv}></div>
     }
 
     const textDivContainer = {
         speed: -10,
         style: layerStyle,
         children: (
-            <div className={styles.textDivContainer}>
-                <div className={styles.textDiv}>
+            <div className={styles.hsMainTextContainer}>
+                <div className={styles.hsTextContainer}>
                     <div>
-                        <h1 className={styles.textH1}>Hair Lounge</h1>
-                        <h3 className={styles.textH3}>Unisex Salon</h3>
-                        <p className={styles.textP}>London | Dagenham</p>
+                        <h1 className={styles.hsHeroHeading}>Hair Lounge</h1>
+                        <h3 className={styles.hsHeroSubHeading}>Unisex Salon</h3>
+                        <p className={styles.hsTextLocation}>London | Dagenham</p>
                     </div>
                     <div>
-                        <button className={styles.textButton}>Book Now</button>
+                        <button className={styles.hsButton}>Book Now</button>
                     </div>
                 </div>
             </div>
@@ -45,8 +45,8 @@ export default function HeroSection() {
     return (
         <section>
             <ParallaxBanner
-                className={styles.parallaxBanner}
-                layers={[ backgroundImg, whiteDiv, textDivContainer]}
+                className={styles.hsParallaxBanner}
+                layers={[ heroImg, whiteDiv, textDivContainer]}
             >
             </ParallaxBanner>
         </section>

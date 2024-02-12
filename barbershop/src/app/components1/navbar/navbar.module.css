@@ -24,15 +24,15 @@
 }
 
 .navLiFlexItems {
-    margin-right: 6vw;
+    margin-right: 5.5em;
 }
 
 .navLiFlexItems:last-child {
-    margin-right: 1.5vw;
+    margin-right: 2em;
 }
 
 .navLinks {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     color: var(--white);
     text-decoration: none;
 }

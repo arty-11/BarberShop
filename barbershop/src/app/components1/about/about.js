@@ -8,8 +8,8 @@ import AboutImg from './aboutImg.js';
 export default function About() {
   return (
     <section aria-labelledby="about" className={styles.aboutSectionContainer}>
-      <div className={styles.divRight}></div>
-      <div className={styles.divLeft}></div>
+      <div className={styles.aboutDivRight}></div>
+      <div className={styles.aboutDivLeft}></div>
       <h2 id="about" className={["headingStyle", styles.aboutMainHeading].join(" ")}>About Us</h2>
       <div className={styles.aboutFlexContainer}>
         <div className={styles.aboutContainerText}>

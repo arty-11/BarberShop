@@ -1,17 +1,17 @@
-.parallaxBanner {
+.hsParallaxBanner {
     height: 100vh;
 }
 
-.textDivContainer {
+.hsMainTextContainer {
     position: absolute;
-    top: 40%;
+    top: 20em;
     left: 0;
     transform: translate(0, -50%);
-    height: 70vh;
+    height: 60%;
     width: 100%;
 }
 
-.textDiv {
+.hsTextContainer {
     position: absolute;
     inset: 0;
     display: flex;
@@ -21,49 +21,49 @@
     color: var(--white);
 }
 
-.textH1 {
-    font-size: 6em;
+.hsHeroHeading {
+    font-size: 6rem;
     font-weight: 700;
 }
 
-.textH3 {
-    font-size: 2.5em;
+.hsHeroSubHeading {
+    font-size: 2.5rem;
 }
 
-.textP {
-    font-size: 1.2em;
+.hsTextLocation {
+    font-size: 1.2rem;
 }
 
-.textButton {
+.hsButton {
     background-color: #2a3562;
     border-radius: 10px;
-    font-size: 1.5em;
-    width: 12vw;
+    font-size: 1.5rem;
+    width: 8em;
     transition: background-color 0.3s ease-in;
     line-height: 2;
     box-shadow: 2.5px 2.5px rgba(0,0,0,0.9);
 }
 
-.textButton:hover {
+.hsButton:hover {
     background-color: #1a2a69;
 }
 
-.textDiv div:first-child {
+.hsTextContainer div:first-child {
     text-align: center;
 }
 
-.textDiv div:last-child {
+.hsTextContainer div:last-child {
     text-align: center;
     position: relative;
     top: 12vh;
 }
 
-.whiteDiv {
+.hsWhiteDiv {
     background-color: var(--white);
     width: 150%;
-    height: 24vh;
+    height: 10em;
     position: absolute;
-    bottom: -12vh;
+    bottom: -4em;
     transform: rotate(5deg);
     left: -20vw;
 }

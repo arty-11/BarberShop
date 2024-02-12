@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { v4 as uuidv4 } from 'uuid';
 
 
 export default function navlink({ navLinks, styles }) {
@@ -9,8 +10,9 @@ export default function navlink({ navLinks, styles }) {
     <menu className={styles.navUlFlexContainer}>
         {navLinks.map(navLink => {
             const NavLinkisActive = pathname.startsWith(navLink.path);
+            let id = uuidv4();
                 return (
-                    <li key={navLink.id} className={styles.navLiFlexItems}>
+                    <li key={id} className={styles.navLiFlexItems}>
                         <Link href={navLink.path} className={NavLinkisActive ? [styles.navLinks, styles.navLinkisActive].join(" ") : styles.navLinks}>
                             {navLink.name}
                         </Link>

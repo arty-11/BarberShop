@@ -2,6 +2,28 @@
     position: relative;
 }
 
+.aboutDivRight {
+    position: absolute;
+    top: 4em;
+    right: 0;
+    width: 12em;
+    height: 85%;
+    background-color: var(--headingGrey);
+}
+
+.aboutDivLeft {
+    position: absolute;
+    top: 8em;
+    right: 1.5em;
+    width: 16em;
+    height: 88%;
+    background-color: var(--headingGrey);
+}
+
+.aboutMainHeading {
+    margin-bottom: 2.2em;
+}
+
 .aboutFlexContainer {
     display: flex;
     justify-content: space-evenly;
@@ -10,69 +32,32 @@
 .aboutContainerText {
     position: relative;
     background-color: #f9f4f4;
-    width: 40vw;
+    width: 35em;
     height: 0;
-    padding-bottom: 75vh;
-    top: 7vh;
-    left: 8vw;
+    padding-bottom: 32em;
+    top: 3em;
+    left: 8em;
     z-index: 1;
-}
-
-.aboutMainHeading {
-    margin-bottom: 24vh;
-}
-
-.aboutHeading {
-    margin-top: 10vh;
-    font-size: 2em;
-}
-
-.aboutText {
-    font-size: 0.9em;
 }
 
 .aboutContainerImage {
     position: relative;
-    width: 45vw;
+    width: 44em;
     height: 0;
-    padding-bottom: 85vh;
+    padding-bottom: 38em;
     overflow: hidden;
+}
+
+.aboutHeading {
+    margin: 2.5em 0 0 1em;
+    font-size: 2rem;
 }
 
 .aboutImage {
     object-fit: cover;
 }
 
-.marginLeft {
-    margin-left: 3vw;
-}
-
-.paraMarginRight {
-    margin-right: 2vw;
-}
-
-.paraMarginTop {
-    margin-top: 8vh;
-}
-
-.divRight {
-    position: absolute;
-    top: 10vh;
-    right: 0;
-    /* width: 20vw; */
-    /* height: 47vw; */
-    width: 12em;
-    height: 46em;
-    background-color: var(--headingGrey);
-}
-
-.divLeft {
-    position: absolute;
-    top: 20vh;
-    right: 1vw;
-    /* width: 28vw; */
-    /* height: 44vw; */
-    width: 16em;
-    height: 45em;
-    background-color: var(--headingGrey);
+.aboutPara {
+    margin: 4em 2em 0 2em;
+    font-size: 0.9rem;
 }

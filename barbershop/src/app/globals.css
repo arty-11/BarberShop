@@ -26,8 +26,8 @@ body {
 
 .headingStyle {
   font-size: 5em;
-  margin-top: 10vh;
-  margin-left: 6vw;
+  margin-top: 1.2em;
+  margin-left: 1.2em;
   color: var(--headingGrey);
 }
 

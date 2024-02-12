@@ -9,10 +9,10 @@ import Navlink from "./navlink.js";
 
 //navlinks
 const navLinks = [
-    { id: "1", name: "About", path: "/#about" },
-    { id: "2", name: "Services", path: "/#services" },
-    { id: "3", name: "Contact", path: "/contact" },
-    { id: "4", name: "Book", path: "/book" }
+    { name: "About", path: "/#about" },
+    { name: "Services", path: "/#services" },
+    { name: "Contact", path: "/contact" },
+    { name: "Book", path: "/book" }
 ];
 
 //component
