@@ -4,7 +4,7 @@ import MttTwitterIcon from "./mttTwitterIcon"
 
 export default function MttSocialMedia({ containerNameHover, styles }) {
     return (
-        <div className={containerNameHover ? [styles.mttSocialMediaFlexContainer, styles.mttFullWidth].join(" ") : styles.mttSocialMediaFlexContainer}>
+        <div className={containerNameHover ? [styles.socialMediaFlexContainer, styles.fullWidth].join(" ") : styles.socialMediaFlexContainer}>
             <MttFbIcon iconColour="white" />
             <MttIgIcon iconColour="white" />
             <MttTwitterIcon iconColour="white" />

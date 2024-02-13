@@ -8,7 +8,7 @@ export default function WtfuImg({ styles }) {
         quality={100}
         sizes='(max-width:800px) 30vw, 40vw'
         alt="Hair Lounge location"
-        className={styles.wtfuImg}
+        className={styles.img}
           />
       )
 }

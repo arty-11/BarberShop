@@ -18,27 +18,27 @@ export default function MeetTheTeam() {
   const [container3Hover, setContainer3Hover] = useState(false);
 
     return (
-      <section aria-labelledby="meet-the-team" className={styles.mttSectionContainer}>
-            <h2 id="meet-the-team" className={["headingStyle", styles.mttMainHeading].join(" ")}>The Hair Lounge Family</h2>
-            <div className={styles.mttFlexContainer}>
-                <div className={styles.mttContainer}>
-                  <div className={styles.mttImgContainer} onMouseOver={() => setContainer1Hover(true)} onMouseOut={() => setContainer1Hover(false)}>
+      <section aria-labelledby="meet-the-team" className={styles.sectionContainer}>
+            <h2 id="meet-the-team" className={["headingStyle", styles.mainHeading].join(" ")}>The Hair Lounge Family</h2>
+            <div className={styles.flexContainer}>
+                <div className={styles.container}>
+                  <div className={styles.imgContainer} onMouseOver={() => setContainer1Hover(true)} onMouseOut={() => setContainer1Hover(false)}>
                     <MttImg styles={styles} />
                     <MttName containerNameHover={container1Hover} styles={styles} barberName={barberNames[0]} />
                     <MttSocialMedia containerNameHover={container1Hover} styles={styles}   />
                     </div>
                 </div>
-                <div className={styles.mttContainer} onMouseOver={() => setContainer2Hover(true)} onMouseOut={() => setContainer2Hover(false)}
+                <div className={styles.container} onMouseOver={() => setContainer2Hover(true)} onMouseOut={() => setContainer2Hover(false)}
                   >
-                  <div className={styles.mttImgContainer}>
+                  <div className={styles.imgContainer}>
                     <MttImg styles={styles} />
                     <MttName containerNameHover={container2Hover} styles={styles} barberName={barberNames[1]} />
                     <MttSocialMedia containerNameHover={container2Hover} styles={styles}  />
                   </div>
                 </div>
-                <div className={styles.mttContainer} onMouseOver={() => setContainer3Hover(true)} onMouseOut={() => setContainer3Hover(false)}
+                <div className={styles.container} onMouseOver={() => setContainer3Hover(true)} onMouseOut={() => setContainer3Hover(false)}
                   >
-                  <div className={styles.mttImgContainer}>
+                  <div className={styles.imgContainer}>
                     <MttImg styles={styles} />
                     <MttName containerNameHover={container3Hover} styles={styles} barberName={barberNames[2]} />
                     <MttSocialMedia containerNameHover={container3Hover} styles={styles}   />

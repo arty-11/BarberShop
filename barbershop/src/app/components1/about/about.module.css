@@ -1,8 +1,8 @@
-.aboutSectionContainer {
+.sectionContainer {
     position: relative;
 }
 
-.aboutDivRight {
+.divRight {
     position: absolute;
     top: 4em;
     right: 0;
@@ -11,7 +11,7 @@
     background-color: var(--headingGrey);
 }
 
-.aboutDivLeft {
+.divLeft {
     position: absolute;
     top: 8em;
     right: 1.5em;
@@ -20,16 +20,16 @@
     background-color: var(--headingGrey);
 }
 
-.aboutMainHeading {
+.mainHeading {
     margin-bottom: 2.2em;
 }
 
-.aboutFlexContainer {
+.flexContainer {
     display: flex;
     justify-content: space-evenly;
 }
 
-.aboutContainerText {
+.containerText {
     position: relative;
     background-color: #f9f4f4;
     width: 35em;
@@ -40,7 +40,7 @@
     z-index: 1;
 }
 
-.aboutContainerImage {
+.containerImg {
     position: relative;
     width: 44em;
     height: 0;
@@ -48,16 +48,16 @@
     overflow: hidden;
 }
 
-.aboutHeading {
+.heading {
     margin: 2.5em 0 0 1em;
     font-size: 2rem;
 }
 
-.aboutImage {
+.img {
     object-fit: cover;
 }
 
-.aboutPara {
+.para {
     margin: 4em 2em 0 2em;
     font-size: 0.9rem;
 }

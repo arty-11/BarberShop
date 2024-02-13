@@ -20,22 +20,22 @@ export default function HeroSection() {
     const whiteDiv = {
         speed: -1,
         style: layerStyle,
-        children: <div className={styles.hsWhiteDiv}></div>
+        children: <div className={styles.whiteDiv}></div>
     }
 
     const textDivContainer = {
         speed: -10,
         style: layerStyle,
         children: (
-            <div className={styles.hsMainTextContainer}>
-                <div className={styles.hsTextContainer}>
+            <div className={styles.mainTextContainer}>
+                <div className={styles.textContainer}>
                     <div>
-                        <h1 className={styles.hsHeroHeading}>Hair Lounge</h1>
-                        <h3 className={styles.hsHeroSubHeading}>Unisex Salon</h3>
-                        <p className={styles.hsTextLocation}>London | Dagenham</p>
+                        <h1 className={styles.heroHeading}>Hair Lounge</h1>
+                        <h3 className={styles.heroSubHeading}>Unisex Salon</h3>
+                        <p className={styles.textLocation}>London | Dagenham</p>
                     </div>
                     <div>
-                        <button className={styles.hsButton}>Book Now</button>
+                        <button className={styles.button}>Book Now</button>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default function HeroSection() {
     return (
         <section>
             <ParallaxBanner
-                className={styles.hsParallaxBanner}
+                className={styles.parallaxBanner}
                 layers={[ heroImg, whiteDiv, textDivContainer]}
             >
             </ParallaxBanner>

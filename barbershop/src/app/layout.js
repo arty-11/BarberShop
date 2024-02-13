@@ -1,8 +1,8 @@
 //stylesheets
-import "./globals.css";
+import "./globals.css"
 
 //components
-import Navbar from "./components1/navbar/navbar";
+import Navbar from "./components1/navbar/navbar"
 
 
 export const metadata = {

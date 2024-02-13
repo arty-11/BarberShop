@@ -9,13 +9,13 @@ export default function Navlink({ navLinks, styles }) {
     const pathname = usePathname();
 
     return (
-    <menu className={styles.navUlFlexContainer}>
+    <menu className={styles.ulFlexContainer}>
         {navLinks.map(navLink => {
             const NavLinkisActive = pathname.startsWith(navLink.path);
             let id = uuidv4();
                 return (
-                    <li key={id} className={styles.navLiFlexItems}>
-                        <Link href={navLink.path} className={NavLinkisActive ? [styles.navLinks, styles.navLinkisActive].join(" ") : styles.navLinks}>
+                    <li key={id} className={styles.liFlexItems}>
+                        <Link href={navLink.path} className={NavLinkisActive ? [styles.links, styles.linkisActive].join(" ") : styles.links}>
                             {navLink.name}
                         </Link>
                     </li>

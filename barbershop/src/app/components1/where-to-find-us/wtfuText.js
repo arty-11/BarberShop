@@ -11,10 +11,10 @@ export default function WtfuText({ styles }) {
 
   return (
     <>
-      <div className={styles.wtfuIconContainer}>
+      <div className={styles.iconContainer}>
         <WtfuIcon iconColour="black" />
       </div>
-      <div className={styles.wtfuTextContainer}>
+      <div className={styles.textContainer}>
         <p>{barbershopInfo.name}</p>
         <p>{barbershopInfo.streetName}</p>
         <p>{barbershopInfo.town}</p>

@@ -1,24 +1,24 @@
-.mttSectionContainer {
+.sectionContainer {
     background-color: var(--black);
 }
 
-.mttMainHeading {
+.mainHeading {
     margin-bottom: 2em;
 }
 
-.mttFlexContainer {
+.flexContainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 8em;
 }
 
-.mttContainer  {
+.container  {
     width: 18em;
     height: 30em;
 }
 
-.mttImgContainer {
+.imgContainer {
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -26,11 +26,11 @@
     border: 1px solid #ff8210;
 }
 
-.mttImg {
+.img {
     object-fit: cover;
 }
 
-.mttSocialMediaFlexContainer {
+.socialMediaFlexContainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -42,11 +42,11 @@
     transition: width 1s;
 }
 
-.mttFullWidth {
+.fullWidth {
     width: 100%;
 }
 
-.mttNameFlexContainer {
+.nameFlexContainer {
     position: absolute;
     top: 0;
     height: 0;
@@ -59,7 +59,7 @@
     font-size: 0;
 }
 
-.mttFullHeight {
+.fullHeight {
     height: 90%;
     font-size: 2.5rem;
     color: var(--white);

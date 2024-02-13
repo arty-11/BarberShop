@@ -1,32 +1,32 @@
-.wtfuHeading {
+.heading {
     margin-bottom: 1.5em;
 }
 
-.wtfuMainFlexContainer {
+.mainFlexContainer {
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.wtfuTextFlexContainer {
+.textFlexContainer {
     border: 1px solid var(--black);
     display: flex;
     justify-content: space-between;
     padding: 2.5em 2.8em;
 }
 
-.wtfuIconContainer {
+.iconContainer {
     /* border: 1px solid yellow; */
     padding: 0.2em 0.5em 0 0;
 }
 
-.wtfuTextContainer {
+.textContainer {
     /* border: 1px solid purple; */
     font-size: 1.4rem;
 }
 
-.wtfuImgContainer {
+.imgContainer {
     /* border: 1px solid red; */
     width: 60%;
     height: 30em;
@@ -34,6 +34,6 @@
     position: relative;
 }
 
-.wtfuImg {
+.img {
     object-fit: cover;
 }
