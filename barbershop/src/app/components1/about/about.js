@@ -1,9 +1,9 @@
 //imports
-import styles from './about.module.css';
+import styles from './about.module.css'
 
 //components
-import AboutText from './aboutText.js';
-import AboutImg from './aboutImg.js';
+import AboutText from './aboutText'
+import AboutImg from './aboutImg'
 
 export default function About() {
   return (

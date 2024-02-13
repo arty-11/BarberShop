@@ -1,6 +1,8 @@
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { v4 as uuidv4 } from 'uuid';
+'use client'
+
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { v4 as uuidv4 } from 'uuid'
 
 
 export default function Navlink({ navLinks, styles }) {

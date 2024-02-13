@@ -1,9 +1,9 @@
 //imports
-import styles from "./where-to-find-us.module.css";
+import styles from "./where-to-find-us.module.css"
 
 //components
-import WtfuImg from "./wtfuImg";
-import WtfuText from "./wtfuText";
+import WtfuImg from "./wtfuImg"
+import WtfuText from "./wtfuText"
 
 export default function WhereToFindUs() {
   return (

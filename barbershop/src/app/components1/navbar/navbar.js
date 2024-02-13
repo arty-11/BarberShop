@@ -1,22 +1,23 @@
-'use client';
+'use client'
 
 //imports
-import styles from "./navbar.module.css";
-import { useEffect, useState } from "react";
+import styles from "./navbar.module.css"
+import { useEffect, useState } from "react"
 
 //components
-import Navlink from "./navlink.js";
+import Navlink from "./navlink"
 
-//navlinks
-const navLinks = [
-    { name: "About", path: "/#about" },
-    { name: "Services", path: "/#services" },
-    { name: "Contact", path: "/contact" },
-    { name: "Book", path: "/book" }
-];
 
 //component
 export default function Navbar() {
+//navlinks
+    const navLinks = [
+        { name: "About", path: "/#about" },
+        { name: "Services", path: "/#services" },
+        { name: "Contact", path: "/contact" },
+        { name: "Book", path: "/book" }
+    ];
+
     const [changeHeadingColour, setChangeHeadingColour] = useState(false);
 
     const toggleScroll = () => {

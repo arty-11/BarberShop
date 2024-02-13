@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import styles from './hero-section.module.css';
-import { ParallaxBanner } from 'react-scroll-parallax';
+import styles from './hero-section.module.css'
+import { ParallaxBanner } from 'react-scroll-parallax'
 
 export default function HeroSection() {
 

@@ -1,4 +1,4 @@
-import WtfuIcon from "./wtfuIcon.js";
+import WtfuIcon from "./wtfuIcon"
 
 export default function WtfuText({ styles }) {
 
