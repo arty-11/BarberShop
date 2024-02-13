@@ -31,6 +31,10 @@ body {
   color: var(--headingGrey);
 }
 
+.iconStyle {
+  cursor: pointer;
+}
+
 /* @media (prefers-color-scheme: dark) {
 
 } */
