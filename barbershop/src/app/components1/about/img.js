@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function AboutImg({ styles }) {
+export default function Img({ styles }) {
   return (
     <Image
         src='/Barber-imgs/picture-6.jpg'

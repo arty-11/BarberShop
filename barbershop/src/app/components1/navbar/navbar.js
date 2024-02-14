@@ -7,7 +7,6 @@ import { useEffect, useState } from "react"
 //components
 import Navlink from "./navlink"
 
-
 //component
 export default function Navbar() {
 //navlinks

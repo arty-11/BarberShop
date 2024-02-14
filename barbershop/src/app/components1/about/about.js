@@ -2,8 +2,8 @@
 import styles from './about.module.css'
 
 //components
-import AboutText from './aboutText'
-import AboutImg from './aboutImg'
+import Text from './text'
+import Img from './img'
 
 export default function About() {
   return (
@@ -13,10 +13,10 @@ export default function About() {
       <h2 id="about" className={["headingStyle", styles.mainHeading].join(" ")}>About Us</h2>
       <div className={styles.flexContainer}>
         <div className={styles.containerText}>
-          <AboutText styles={styles} />
+          <Text styles={styles} />
         </div>
         <div className={styles.containerImg}>
-          <AboutImg styles={styles} />
+          <Img styles={styles} />
         </div>
       </div>
     </section>

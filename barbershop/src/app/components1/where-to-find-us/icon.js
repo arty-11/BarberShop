@@ -1,4 +1,4 @@
-export default function WtfuIcon({ iconColour }) {
+export default function Icon({ iconColour }) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -2,8 +2,8 @@
 import styles from "./where-to-find-us.module.css"
 
 //components
-import WtfuImg from "./wtfuImg"
-import WtfuText from "./wtfuText"
+import Img from "./img"
+import Text from "./text"
 
 export default function WhereToFindUs() {
   return (
@@ -13,10 +13,10 @@ export default function WhereToFindUs() {
       </h2>
       <div className={styles.mainFlexContainer}>
         <div className={styles.textFlexContainer}>
-          <WtfuText styles={styles} />
+          <Text styles={styles} />
         </div>
         <div className={styles.imgContainer}>
-          <WtfuImg styles={styles} />
+          <Img styles={styles} />
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-export default function AboutText({ styles }) {
+export default function Text({ styles }) {
     return (
         <>
           <h3 className={styles.heading}>

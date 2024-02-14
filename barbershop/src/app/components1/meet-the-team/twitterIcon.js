@@ -1,4 +1,4 @@
-export default function MttTwitterIcon({ iconColour }) {
+export default function TwitterIcon({ iconColour }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg"
       height="1.8em"

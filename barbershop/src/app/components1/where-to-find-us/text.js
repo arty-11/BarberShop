@@ -1,6 +1,6 @@
-import WtfuIcon from "./wtfuIcon"
+import Icon from "./icon"
 
-export default function WtfuText({ styles }) {
+export default function Text({ styles }) {
 
   const barbershopInfo = {
     name: "Hair Lounge Unisex Salon",
@@ -12,7 +12,7 @@ export default function WtfuText({ styles }) {
   return (
     <>
       <div className={styles.iconContainer}>
-        <WtfuIcon iconColour="black" />
+        <Icon iconColour="black" />
       </div>
       <div className={styles.textContainer}>
         <p>{barbershopInfo.name}</p>

@@ -1,0 +1,88 @@
+.section {
+    margin-top: 6em;
+    border: 1px solid black;
+}
+
+.header {
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.textGalleryFlexContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55em;
+    /* border: 3px solid pink; */
+}
+
+.textFlexContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2em;
+    width: 30%;
+    /* border: 1px solid red; */
+}
+
+.textFlexContainer div:first-child {
+    text-align: center;
+    /* border: 2px solid blue; */
+}
+
+.textFlexContainer div:last-child {
+    background-color: #f4d1ed;
+    text-align: center;
+    line-height: 2.5;
+    width: 80%;
+    font-size: 1.4rem;
+    /* border: 1px solid green; */
+}
+
+.galleryGridContainer {
+    display: grid;
+    width: 50%;
+    height: 45em;
+    grid-template-columns: 25em 2em 15em;
+    row-gap: 2.5em;
+    column-gap: 1em;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.galleryGridContainer > div {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+}
+
+.galleryGridContainer div:nth-child(2) {
+    border-radius: 50px;
+}
+
+.galleryGridContainer div:first-child {
+    grid-area: 1 / span 2;
+}
+
+.galleryGridContainer div:last-child {
+    grid-area: 2 / 3 / 2 / 4;
+}
+
+.img {
+    object-fit: cover;
+}
+
+.videoFlexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+    /* border: 1px solid red; */
+}
+
+.videoFlexContainer > div {
+    height: 28em;
+    width: 42em;
+    background-color: var(--black);
+    /* border: 3px solid blue; */
+}

@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function MttImg({ styles }) {
+export default function Img({ styles }) {
     return (
         <Image
             src='/Barber-imgs/picture-2.jpg'

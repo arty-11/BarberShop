@@ -1,4 +1,4 @@
-export default function MttIgIcon({ iconColour }) {
+export default function IgIcon({ iconColour }) {
   return (
     <svg 
         xmlns="http://www.w3.org/2000/svg"

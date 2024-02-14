@@ -1,4 +1,4 @@
-export default function MttFbIcon({ iconColour }) {
+export default function FbIcon({ iconColour }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg"
       height="1.8em"
