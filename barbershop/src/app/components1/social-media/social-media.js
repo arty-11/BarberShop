@@ -1,61 +1,42 @@
+//imports
 import styles from './social-media.module.css'
-import Image from 'next/image'
+
+//components
+import Img from './img'
+import Text from './text'
 
 export default function SocialMedia() {
+
+  const imgs = {
+    img1: '/Barber-imgs/picture-2.jpg',
+    img2: '/Barber-imgs/picture-3.jpg',
+    img3: '/Barber-imgs/picture-4.jpg',
+    img4: '/Barber-imgs/picture-5.jpg'
+  }
+
+  const socialMediaInfo = {
+    instagram: "@gb_hairloungelondon",
+    tikTok: "@gb_hairloungelondon"
+  }
+
   return (
     <section aria-labelledby='social-media' className={styles.section}>
       <div className={styles.textGalleryFlexContainer}>
-        <div className={styles.textFlexContainer}>
-          <div>
-            <h2 id="social-media" className={styles.header}>We Are On Instagram And TikTok!</h2>
+        <Text socialMediaInfo={socialMediaInfo} styles={styles} />
+          <div className={styles.galleryGridContainer}>
+            <div>
+              <Img src={imgs.img1} styles={styles} />
+            </div>
+            <div className={styles.roundedBorder}>
+              <Img src={imgs.img2} styles={styles} />
+            </div>
+            <div className={styles.roundedBorder}>
+              <Img src={imgs.img3} styles={styles} />
+            </div>
+            <div>
+              <Img src={imgs.img4} styles={styles} />
+            </div>
           </div>
-          <div>
-            <p>Instagram: @gb_hairloungelondon</p>
-            <p>TikTok: @gb_hairloungelondon</p>
-          </div>
-        </div>
-        <div className={styles.galleryGridContainer}>
-          <div>
-            <Image
-        src='/Barber-imgs/picture-2.jpg'
-        fill={true}
-        quality={100}
-        sizes='(max-width:800px) 30vw, 40vw'
-        className={styles.img}
-        alt="Hair Lounge Video"
-        />
-          </div>
-          <div>
-            <Image
-        src='/Barber-imgs/picture-3.jpg'
-        fill={true}
-        quality={100}
-        sizes='(max-width:800px) 30vw, 40vw'
-        className={styles.img}
-        alt="Hair Lounge Video"
-        />
-          </div>
-          <div>
-            <Image
-        src='/Barber-imgs/picture-4.jpg'
-        fill={true}
-        quality={100}
-        sizes='(max-width:800px) 30vw, 40vw'
-        className={styles.img}
-        alt="Hair Lounge Video"
-        />
-          </div>
-          <div>
-            <Image
-        src='/Barber-imgs/picture-5.jpg'
-        fill={true}
-        quality={100}
-        sizes='(max-width:800px) 30vw, 40vw'
-        className={styles.img}
-        alt="Hair Lounge Video"
-          />
-          </div>
-        </div>
       </div>
       <div className={styles.videoFlexContainer}>
         <div></div>

@@ -2,7 +2,7 @@ import Icon from "./icon"
 
 export default function Text({ styles }) {
 
-  const barbershopInfo = {
+  const addressInfo = {
     name: "Hair Lounge Unisex Salon",
     streetName: "441 Porters Avenue,",
     town: "Dagenham",
@@ -15,10 +15,10 @@ export default function Text({ styles }) {
         <Icon iconColour="black" />
       </div>
       <div className={styles.textContainer}>
-        <p>{barbershopInfo.name}</p>
-        <p>{barbershopInfo.streetName}</p>
-        <p>{barbershopInfo.town}</p>
-        <p>{barbershopInfo.postcode}</p>
+        <p>{addressInfo.name}</p>
+        <p>{addressInfo.streetName}</p>
+        <p>{addressInfo.town}</p>
+        <p>{addressInfo.postcode}</p>
       </div>
     </>
   )
