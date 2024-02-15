@@ -5,9 +5,7 @@ import styles from "./meet-the-team.module.css"
 import { useState } from "react"
 
 //components
-import Img from "./img"
-import BarberName from "./barberName"
-import SocialMedia from "./socialMedia"
+import Container from "./container"
 
 export default function MeetTheTeam() {
 
@@ -21,29 +19,9 @@ export default function MeetTheTeam() {
       <section aria-labelledby="meet-the-team" className={styles.sectionContainer}>
             <h2 id="meet-the-team" className={["headingStyle", styles.mainHeading].join(" ")}>The Hair Lounge Family</h2>
             <div className={styles.flexContainer}>
-                <div className={styles.container}>
-                  <div className={styles.imgContainer} onMouseOver={() => setContainer1Hover(true)} onMouseOut={() => setContainer1Hover(false)}>
-                    <Img styles={styles} />
-                    <BarberName containerNameHover={container1Hover} styles={styles} barberName={barberNames[0]} />
-                    <SocialMedia containerNameHover={container1Hover} styles={styles}   />
-                    </div>
-                </div>
-                <div className={styles.container} onMouseOver={() => setContainer2Hover(true)} onMouseOut={() => setContainer2Hover(false)}
-                  >
-                  <div className={styles.imgContainer}>
-                    <Img styles={styles} />
-                    <BarberName containerNameHover={container2Hover} styles={styles} barberName={barberNames[1]} />
-                    <SocialMedia containerNameHover={container2Hover} styles={styles}  />
-                  </div>
-                </div>
-                <div className={styles.container} onMouseOver={() => setContainer3Hover(true)} onMouseOut={() => setContainer3Hover(false)}
-                  >
-                  <div className={styles.imgContainer}>
-                    <Img styles={styles} />
-                    <BarberName containerNameHover={container3Hover} styles={styles} barberName={barberNames[2]} />
-                    <SocialMedia containerNameHover={container3Hover} styles={styles}   />
-                  </div>
-                </div>
+                  <Container styles={styles} setContainerNameHover={setContainer1Hover} containerNameHover={container1Hover} barberName={barberNames[0]} />
+                  <Container styles={styles} setContainerNameHover={setContainer2Hover} containerNameHover={container2Hover} barberName={barberNames[1]} />
+                  <Container styles={styles} setContainerNameHover={setContainer3Hover} containerNameHover={container3Hover} barberName={barberNames[2]} />
             </div>
       </section>
   )

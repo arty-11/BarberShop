@@ -88,6 +88,11 @@
     /* border: 3px solid blue; */
 }
 
+.link {
+    text-decoration: underline;
+    color: blue;
+}
+
 /* @media (max-width: 1000px) {
     .galleryGridContainer {
         grid-template-columns: repeat(1, 1fr);

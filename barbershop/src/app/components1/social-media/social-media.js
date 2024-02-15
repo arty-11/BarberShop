@@ -15,8 +15,14 @@ export default function SocialMedia() {
   }
 
   const socialMediaInfo = {
-    instagram: "@gb_hairloungelondon",
-    tikTok: "@gb_hairloungelondon"
+    instagram: {
+      accountName: "@gb_hairloungelondon",
+      link: "https://www.instagram.com/gb_hairloungelondon/?hl=en-gb"
+    },
+    tikTok: {
+      accountName: "@gb_hairloungelondon",
+      link: "https://www.tiktok.com/@gb_hairloungelondon"
+    }
   }
 
   return (
