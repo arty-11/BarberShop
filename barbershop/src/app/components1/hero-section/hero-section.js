@@ -18,7 +18,7 @@ export default function HeroSection() {
     }
 
     const whiteDiv = {
-        speed: -1,
+        speed: 0,
         style: layerStyle,
         children: <div className={styles.whiteDiv}></div>
     }

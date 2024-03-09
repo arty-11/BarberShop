@@ -4,23 +4,24 @@
 
 .divRight {
     position: absolute;
-    top: 4em;
+    top: 15%;
     right: 0;
     width: 12em;
-    height: 85%;
+    height: 75%;
     background-color: var(--headingGrey);
 }
 
 .divLeft {
     position: absolute;
-    top: 8em;
+    top: 22%;
     right: 1.5em;
     width: 16em;
-    height: 88%;
+    height: 80%;
     background-color: var(--headingGrey);
 }
 
 .mainHeading {
+    margin-top: -0.25em;
     margin-bottom: 2.2em;
 }
 

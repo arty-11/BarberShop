@@ -1,5 +1,5 @@
 .parallaxBanner {
-    height: 100vh;
+    height: 100dvh;
 }
 
 .mainTextContainer {
@@ -35,7 +35,7 @@
 }
 
 .button {
-    background-color: #2a3562;
+    background-color: #0d1c62;
     border-radius: 10px;
     font-size: 1.5rem;
     width: 8em;
@@ -45,7 +45,7 @@
 }
 
 .button:hover {
-    background-color: #1a2a69;
+    background-color: #2a3562;
 }
 
 .textContainer div:first-child {
@@ -60,9 +60,9 @@
 .whiteDiv {
     background-color: var(--white);
     width: 150%;
-    height: 10em;
     position: absolute;
-    bottom: -4em;
+    bottom: -5em;
     transform: rotate(5deg);
     left: -20vw;
+    padding-top: 9em;
 }
