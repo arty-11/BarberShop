@@ -26,7 +26,6 @@ body {
 
 .headingStyle {
   font-size: 5em;
-  margin-left: 2.5em;
   color: var(--headingGrey);
 }
 
@@ -37,3 +36,6 @@ body {
 /* @media (prefers-color-scheme: dark) {
 
 } */
+
+
+/* 320px , 640px, 768px, 1024px, 1280px, 1536px */

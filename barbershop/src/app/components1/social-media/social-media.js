@@ -29,7 +29,7 @@ export default function SocialMedia() {
     <section aria-labelledby='social-media' className={styles.section}>
       <div className={styles.textGalleryFlexContainer}>
         <Text socialMediaInfo={socialMediaInfo} styles={styles} />
-          <div className={styles.galleryGridContainer}>
+          {/* <div className={styles.galleryGridContainer}>
             <div>
               <Img src={imgs.img1} styles={styles} />
             </div>
@@ -42,7 +42,7 @@ export default function SocialMedia() {
             <div>
               <Img src={imgs.img4} styles={styles} />
             </div>
-          </div>
+          </div> */}
       </div>
       <div className={styles.videoFlexContainer}>
         <div></div>

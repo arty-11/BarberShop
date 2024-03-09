@@ -6,12 +6,12 @@ export default function Text({ socialMediaInfo, styles }) {
         </div>
         <div>
             <p>Instagram:&nbsp;
-              <a class={styles.link} href={socialMediaInfo.instagram.link} target="_blank">
+              <a className={styles.link} href={socialMediaInfo.instagram.link} target="_blank">
                 {socialMediaInfo.instagram.accountName}
               </a>
             </p>
             <p>TikTok:&nbsp;
-              <a class={styles.link} href={socialMediaInfo.tikTok.link} target="_blank">
+              <a className={styles.link} href={socialMediaInfo.tikTok.link} target="_blank">
                 {socialMediaInfo.tikTok.accountName}
               </a>
             </p>
