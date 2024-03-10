@@ -13,17 +13,14 @@
     padding-bottom: 8em;
 }
 
-.container  {
-    width: 18em;
-    height: 30em;
-}
-
 .imgContainer {
     position: relative;
     overflow: hidden;
     height: 100%;
     border-radius: 100px;
     border: 1px solid #ff8210;
+    display: flex;
+    justify-content: center;
 }
 
 .img {
@@ -37,9 +34,8 @@
     position: absolute;
     bottom: 0;
     width: 0;
-    height: 10%;
+    transition: width 1.5s;
     background-color: var(--black);
-    transition: width 1s;
 }
 
 .fullWidth {
@@ -50,13 +46,13 @@
     position: absolute;
     top: 0;
     height: 0;
+    transition: height 1.5s;
     width: 100%;
     background-color: var(--black);
-    transition: height 1s;
+    font-size: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0;
 }
 
 .fullHeight {
@@ -64,3 +60,87 @@
     font-size: 2.5rem;
     color: var(--white);
 }
+
+.reduceMarginInline {
+    margin-inline: -2em;
+}
+
+/* MEDIA QUERIES */
+
+@media (width >= 280px) {
+    .flexContainer {
+        flex-direction: column;
+        row-gap: 6em;
+    }
+
+    .mainHeading {
+        margin-left: 0;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .container {
+        width: 12em;
+        height: 20em;
+    }
+
+    .socialMediaFlexContainer {
+        height: 15%;
+    }
+
+    .iconStyle {
+        width: 1.8em;
+    }
+}
+
+@media (width >= 320px) {
+    .container {
+        width: 15em;
+        height: 23em;
+    }
+}
+
+@media (width >= 640px) {
+    .mainHeading {
+        font-size: 5rem;
+    }
+
+    .container {
+        width: 18em;
+        height: 28em;
+    }
+
+    .iconStyle {
+        width: 2.2em;
+    }
+}
+
+@media (width >= 1024px) {
+    .flexContainer {
+        flex-direction: initial;
+        row-gap: 0;
+    }
+
+     .mainHeading {
+        margin-left: 0.5em;
+        text-align: initial;
+    }
+    
+    .socialMediaFlexContainer {
+        height: 10%;
+    }
+}
+
+
+@media (width >= 1280px) {
+    .container {
+        width: 22em;
+        height: 32em;
+    }
+
+    .iconStyle {
+        width: 2.4em;
+    }
+}
+
+/* 280px, 320px, 640px, 768px, 1024px, 1280px, 1536px */
