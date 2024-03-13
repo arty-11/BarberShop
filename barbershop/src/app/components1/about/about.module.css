@@ -123,6 +123,7 @@
 
     .containerText {
         padding-bottom: 10em;
+        width: 80%;
     }
 
     .heading {
@@ -136,27 +137,12 @@
 
     .containerImg {
         margin-top: -1.5em;
-        padding-bottom: 25em;
+        padding-bottom: 24em;
     }
 }
 
-@media (width >= 880px) { /* new breakpoint */
-    .containerText {
-        width: 80%;
-    }
-
-    .para {
-        margin: 5em 8em 0 8em;
-        font-size: 1.1rem;
-    }
-
-    .containerImg {
-        margin-top: -1.5em;
-        padding-bottom: 30em;
-    }
-}
-
-@media (width >= 1024px) {
+/* Adjusted Breakpoint */
+@media (width >= 900px) {
     .mainHeading {
         margin-left: 0.5em;
         margin-bottom: 2.2em;
