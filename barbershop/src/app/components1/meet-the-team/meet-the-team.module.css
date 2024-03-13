@@ -19,8 +19,6 @@
     height: 100%;
     border-radius: 100px;
     border: 1px solid #ff8210;
-    display: flex;
-    justify-content: center;
 }
 
 .img {
@@ -63,6 +61,10 @@
 
 .reduceMarginInline {
     margin-inline: -2em;
+}
+
+.iconStyle {
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */
@@ -134,7 +136,7 @@
 
 @media (width >= 1280px) {
     .container {
-        width: 22em;
+        width: 20em;
         height: 32em;
     }
 
