@@ -4,11 +4,11 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { v4 as uuidv4 } from 'uuid'
 
-export default function Navlink({ navLinks, styles, mobileMenu, active }) {
-    const pathname = usePathname();
+export default function Navlink({ navLinks, styles, hamburgerIsActive }) {
+    const pathname = usePathname()
 
     return (
-    <menu className={active ? [styles.ulFlexContainer, styles.ulFlexContainerActive].join(" ") : styles.ulFlexContainer} onClick={mobileMenu}>
+        <menu className={hamburgerIsActive ? [styles.ulFlexContainer, styles.ulFlexContainerActive].join(" ") : styles.ulFlexContainer}>
         {navLinks.map(navLink => {
             const NavLinkisActive = pathname.startsWith(navLink.path);
             let id = uuidv4();
