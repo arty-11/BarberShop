@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     z-index: 99;
-    height: 15%;
+    height: 13.5%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -21,18 +21,10 @@
 
 .ulFlexContainer {
     display: flex;
-}
-
-.liFlexItems {
-    margin-right: 5.5em;
-}
-
-.liFlexItems:last-child {
-    margin-right: 2em;
+    /* transition: 0.3s; */
 }
 
 .links {
-    font-size: 1.8rem;
     color: var(--white);
     text-decoration: none;
 }
@@ -44,3 +36,108 @@
 .linkisActive {
     border: 1px solid red;
 }
+
+.hamburger {
+    cursor: pointer;
+    margin-right: 2.5em;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--white);
+}
+
+/* MEDIA QUERIES */
+@media (width >= 280px) {
+    .ulFlexContainer {
+        position: absolute;
+        right: 100%;
+        top: 3em;
+        flex-direction: column;
+        background-color: black;
+        width: 10em;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .ulFlexContainerActive {
+        right: 0;
+    }
+
+    .links {
+        font-size: 1.5rem;
+    }
+
+    .liFlexItems, .liFlexItems:last-child {
+        margin-right: 0;
+    }
+
+    .liFlexItems:last-child {
+        padding-bottom: 0.8em;
+    }
+
+    .liFlexItems {
+        margin-top: 1.2em;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburgerActive .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerActive .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburgerActive .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+@media (width >= 640px) {
+    .ulFlexContainer {
+        position: initial;
+        flex-direction: initial;
+        text-align: initial;
+        background-color: initial;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hamburger, .hamburgerActive {
+        display: none;
+    }
+
+    .links {
+        font-size: 1.4rem;
+    }
+
+    .liFlexItems {
+        margin-top: 0;
+        margin-right: 2.5em;
+    }
+
+    .liFlexItems:last-child {
+        margin-right: 2em;
+        padding-bottom: 0;
+    }
+}
+
+@media (width >= 1024px) {
+    .links {
+        font-size: 1.6rem;
+    }
+
+    .liFlexItems {
+        margin-right: 4.5em;
+    }
+}
+/* 280px, 320px, 640px, 768px, 1024px, 1280px, 1536px */

@@ -9,6 +9,9 @@ import Navlink from "./navlink"
 
 //component
 export default function Navbar() {
+
+    const [active, setActive] = useState(false)
+
 //navlinks
     const navLinks = [
         { name: "About", path: "/#about" },
@@ -33,11 +36,21 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', toggleScroll);
     })
 
+    const mobileMenu = () => {
+        setActive(!active)
+        console.log("hehy")
+    }
+
     return (
         <header className={changeHeadingColour ? [styles.headerColour, styles.header].join(" ") : [styles.headerTransparent, styles.header].join(" ")}>
             <nav aria-label="primary">
-                    <Navlink navLinks={navLinks} styles={styles}  />
+                    <Navlink navLinks={navLinks} styles={styles} mobileMenu={mobileMenu} active={active}  />
             </nav>
+            <div className={active ? [styles.hamburger, styles.hamburgerActive].join(" ") : styles.hamburger} onClick={mobileMenu}>
+                <span className={styles.bar}></span>
+                <span className={styles.bar}></span>
+                <span className={styles.bar}></span>
+            </div>
         </header>
      );
 }

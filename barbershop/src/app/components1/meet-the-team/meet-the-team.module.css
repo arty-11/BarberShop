@@ -76,8 +76,8 @@
     }
 
     .mainHeading {
-        margin-left: 0;
-        font-size: 4rem;
+        /* margin-left: 0; */
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -97,19 +97,19 @@
 
 @media (width >= 320px) {
     .container {
-        width: 15em;
-        height: 23em;
+        width: 14em;
+        height: 22em;
     }
 }
 
 @media (width >= 640px) {
     .mainHeading {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .container {
-        width: 18em;
-        height: 28em;
+        width: 16em;
+        height: 26em;
     }
 
     .iconStyle {
@@ -126,6 +126,7 @@
      .mainHeading {
         margin-left: 0.5em;
         text-align: initial;
+        font-size: 5rem;
     }
     
     .socialMediaFlexContainer {
@@ -137,7 +138,7 @@
 @media (width >= 1280px) {
     .container {
         width: 20em;
-        height: 32em;
+        height: 30em;
     }
 
     .iconStyle {
