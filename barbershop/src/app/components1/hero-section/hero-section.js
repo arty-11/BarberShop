@@ -1,9 +1,18 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import styles from './hero-section.module.css'
 import { ParallaxBanner } from 'react-scroll-parallax'
 
 export default function HeroSection() {
+
+    const [speedSlow, setSpeedSlow] = useState(false)
+
+    useEffect(() => {       // Reduce speed of parallax text container on smaller screens to prevent button flowing over to about section
+        if (screen.width <= 1024) {
+            setSpeedSlow(true)
+        }
+    })
 
     const layerStyle = {
         position: "absolute",
@@ -24,7 +33,7 @@ export default function HeroSection() {
     }
 
     const textDivContainer = {
-        speed: -11,
+        speed: speedSlow ? -7.5 : -11,
         style: layerStyle,
         children: (
             <div className={styles.mainTextContainer}>

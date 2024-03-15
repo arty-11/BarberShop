@@ -4,10 +4,8 @@
 
 .mainTextContainer {
     position: absolute;
-    top: 20em;
     left: 0;
     transform: translate(0, -50%);
-    height: 50%;
     width: 100%;
 }
 
@@ -22,26 +20,15 @@
 }
 
 .heroHeading {
-    font-size: 6rem;
     font-weight: 700;
-}
-
-.heroSubHeading {
-    font-size: 2.5rem;
-}
-
-.textLocation {
-    font-size: 1.2rem;
 }
 
 .button {
     background-color: #0d1c62;
     border-radius: 10px;
-    font-size: 1.5rem;
-    width: 8em;
     transition: background-color 0.3s ease-in;
     line-height: 2;
-    box-shadow: 2.5px 2.5px rgba(0,0,0,0.9);
+    box-shadow: 2.5px 2.5px rgba(0 0 0 / 0.9);
 }
 
 .button:hover {
@@ -54,7 +41,6 @@
 
 .textContainer div:last-child {
     position: relative;
-    top: 8vh;
 }
 
 .whiteDiv {
@@ -66,3 +52,113 @@
     left: -20vw;
     padding-top: 9em;
 }
+
+/* MEDIA QUERIES */
+
+@media (width >= 280px) {
+    .heroHeading {
+        font-size: 4rem;
+    }
+
+    .heroSubHeading {
+        font-size: 1.8rem;
+    }
+
+    .textLocation {
+        font-size: 1rem;
+    }
+
+    .mainTextContainer {
+        top: 17.5em;
+        height: 60%;
+    }
+
+    .textContainer div:last-child {
+        top: 6vh;
+    }
+
+    .button {
+        font-size: 1.3rem;
+        width: 8em;
+    }
+}
+
+@media (width >= 320px) {
+    .heroHeading {
+        font-size: 4.8rem;
+    }
+
+    .heroSubHeading {
+        font-size: 2.5rem;
+    }
+
+    .textLocation {
+        font-size: 1.2rem;
+    }
+
+    .mainTextContainer {
+        top: 18.5em;
+    }
+
+    .textContainer div:last-child {
+        top: 6vh;
+    }
+
+    .button {
+        font-size: 1.4rem;
+        width: 8em;
+    }
+}
+
+@media (width >= 640px) {
+    .heroHeading {
+        font-size: 5rem;
+    }
+
+    .heroSubHeading {
+        font-size: 2.2rem;
+    }
+
+    .textlocation {
+        font-size: 1.1rem;
+    }
+
+    .textContainer div:last-child {
+        top: 8vh;
+    }
+
+    .button {
+        font-size: 1.6rem;
+    }
+}
+
+@media (width >= 1024px) {
+    .heroHeading {
+        font-size: 5.5rem;
+    }
+
+    .heroSubHeading {
+        font-size: 2.4rem;
+    }
+}
+
+@media (width >= 1280px) {
+    .heroHeading {
+        font-size: 6rem;
+    }
+
+    .heroSubHeading {
+        font-size: 2.5rem;
+    }
+
+    .textlocation {
+        font-size: 1.2rem;
+    }
+
+    .mainTextContainer {
+        top: 20em;
+        height: 50%;
+    }
+}
+
+/* 280px, 320px, 640px, 768px, 1024px, 1280px, 1536px */
