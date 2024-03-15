@@ -1,5 +1,5 @@
 .section {
-    margin-top: 0rem;
+    margin-top: 0;
 }
 
 .header {
@@ -12,7 +12,6 @@
     justify-content: space-around;
     align-items: center;
     height: 55em;
-    /* border: 3px solid pink; */
 }
 
 .textFlexContainer {
@@ -21,12 +20,10 @@
     flex-direction: column;
     row-gap: 2em;
     width: 30%;
-    /* border: 1px solid red; */
 }
 
 .textFlexContainer div:first-child {
     text-align: center;
-    /* border: 2px solid blue; */
 }
 
 .textFlexContainer div:last-child {
@@ -35,7 +32,6 @@
     line-height: 2.5;
     width: 80%;
     font-size: 1.4rem;
-    /* border: 1px solid green; */
 }
 
 .galleryGridContainer {
@@ -46,7 +42,6 @@
     row-gap: 2.5em;
     column-gap: 1em;
     width: 50%;
-    /* border: 1px solid red; */
 }
 
 .galleryGridContainer > div {
@@ -78,14 +73,10 @@
     justify-content: center;
     align-items: center;
     height: 30em;
-    /* border: 1px solid red; */
 }
 
 .videoFlexContainer > div {
-    height: 80%;
-    width: 50em;
     background-color: var(--black);
-    /* border: 3px solid blue; */
 }
 
 .link {
@@ -93,16 +84,55 @@
     color: blue;
 }
 
-/* @media (max-width: 1000px) {
-    .galleryGridContainer {
-        grid-template-columns: repeat(1, 1fr);
+/* MEDIA QUERIES */
+@media (width >= 280px) {
+    .videoFlexContainer > div {
+        height: 50%;
+        width: 90%;
     }
 
-    .galleryGridContainer div:first-child {
-        grid-area: 1 / 1;
+    .textFlexContainer div:last-child {
+        width: initial;
+        font-size: 1rem;
     }
 
-    .galleryGridContainer div:nth-child(4) {
-        display: none;
+    .textGalleryFlexContainer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 55em;
+        border: 1px solid red;
     }
-} */
+
+    .header {
+        font-size: 2rem;
+        margin-top: 2em;
+    }
+
+    /* .galleryGridContainer {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 100%;
+        border: 5px solid blue;
+    } */
+
+    /* .galleryGridContainer > div {
+        padding: 0;
+        height: 6em;
+        margin-inline: 2em;
+    } */
+}
+
+@media (width >= 640px) {
+    .videoFlexContainer > div {
+        height: 80%;
+    }   
+}
+
+@media (width >= 1024px) {
+    .videoFlexContainer > div {
+        width: 50em;
+    }    
+}
+
+/* 280px, 320px, 640px, 768px, 1024px, 1280px, 1536px */

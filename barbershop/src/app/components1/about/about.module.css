@@ -87,7 +87,7 @@
     }
 
     .para {
-        margin: 2em 2em 1.5em 2em;
+        margin: 2em 2em 1.5em;
         text-align: center;
         font-size: 0.9rem;
     }
@@ -125,7 +125,7 @@
     }
 
     .para {
-        margin: 4em 4em 0 4em;
+        margin: 4em 4em 0;
         font-size: 1.1rem;
     }
 
@@ -150,7 +150,7 @@
     .containerText {
         left: 1.5em;
         width: 35em;
-        padding-bottom: 5em;
+        padding-bottom: 1em;
         z-index: 1;
     }
 
@@ -158,12 +158,12 @@
         left: -1.5em;
         margin-top: 0;
         width: 40em;
-        padding-bottom: 32em;
+        padding-bottom: 34em;
     }
 
     .para {
-        margin: 4em 2em 0 2em;
-        font-size: 0.9rem;
+        margin: 4em 2em 0;
+        font-size: 1rem;
         line-height: 1.8;
     }
 

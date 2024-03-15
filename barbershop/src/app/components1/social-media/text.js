@@ -5,7 +5,7 @@ export default function Text({ socialMediaInfo, styles }) {
             <h2 id="social-media" className={styles.header}>We Are On Instagram And TikTok!</h2>
         </div>
         <div>
-            {/* <p>Instagram:&nbsp;
+            <p>Instagram:&nbsp;
               <a className={styles.link} href={socialMediaInfo.instagram.link} target="_blank">
                 {socialMediaInfo.instagram.accountName}
               </a>
@@ -14,7 +14,7 @@ export default function Text({ socialMediaInfo, styles }) {
               <a className={styles.link} href={socialMediaInfo.tikTok.link} target="_blank">
                 {socialMediaInfo.tikTok.accountName}
               </a>
-            </p> */}
+            </p>
         </div>
     </div>
   )
