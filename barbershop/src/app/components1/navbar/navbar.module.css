@@ -70,6 +70,7 @@
 
     .links {
         font-size: 1.5rem;
+        display: block;
     }
 
     .liFlexItems, .liFlexItems:last-child {
@@ -140,7 +141,7 @@
         margin-right: 4.5em;
     }
 }
+
 /* 280px, 320px, 640px, 768px, 1024px, 1280px, 1536px */
 
-
-/* NOTES: onclick transition to sharp on hamburger AND I should be able to click anywhere to exit the dropdown */
+/* NOTES: onclick transition to sharp on hamburger */
