@@ -17,8 +17,19 @@
     position: relative;
     overflow: hidden;
     height: 100%;
-    border-radius: 100px;
+    width: 90%;
+    margin-inline: auto;
+    border: 1px solid var(--black);
+    transition: border 1s;
+}
+
+.imgContainerColour {
     border: 1px solid #ff8210;
+}
+
+.container {
+    border-radius: 10%;
+    overflow: hidden;
 }
 
 .img {
@@ -130,7 +141,7 @@
     }
     
     .socialMediaFlexContainer {
-        height: 10%;
+        height: 12%;
     }
 }
 

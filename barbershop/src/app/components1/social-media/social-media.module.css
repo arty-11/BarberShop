@@ -10,16 +10,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* height: 55em; */
 }
 
 .textFlexContainer {
     display: flex;
     flex-direction: column;
     text-wrap: balance;
-    /* align-items: center; */
-    /* row-gap: 2em; */
-    /* width: 30%; */
 }
 
 .textFlexContainer div:first-child {
@@ -30,8 +26,6 @@
     background-color: #f4d1ed;
     text-align: center;
     line-height: 2.5;
-    /* width: 80%; */
-    /* font-size: 1.4rem; */
 }
 
 .galleryGridContainer > div {
@@ -71,6 +65,7 @@
 }
 
 /* MEDIA QUERIES */
+
 @media (width >= 280px) {
     .videoFlexContainer > div {
         height: 50%;

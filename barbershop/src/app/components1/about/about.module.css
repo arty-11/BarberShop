@@ -51,6 +51,7 @@
 }
 
 /* MEDIA QUERIES */
+
 @media (width >= 280px) {
     .mainHeading {
         /* margin-left: 0; */
@@ -194,4 +195,4 @@
 
 /* 280px, 320px, 640px, 768px, 832px, 1024px, 1280px, 1536px */
 
-/* NOTES: May need to adjust the relationship betweent the about text and img on small screens */
+/* NOTES: May need to adjust the relationship between the about text and img on small screens */

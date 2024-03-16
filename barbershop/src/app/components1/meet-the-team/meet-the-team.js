@@ -9,7 +9,7 @@ import Container from "./container"
 
 export default function MeetTheTeam() {
 
-  const barberNames = ["GB", "Eazy", "Jan"];
+  const barberNames = ["Arty", "Andy", "John"];
 
   const [container1Hover, setContainer1Hover] = useState(false);
   const [container2Hover, setContainer2Hover] = useState(false);
