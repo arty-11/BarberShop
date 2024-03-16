@@ -33,7 +33,7 @@ export default function HeroSection() {
     }
 
     const textDivContainer = {
-        speed: speedSlow ? -7.5 : -11,
+        speed: speedSlow ? -2 : -11,
         style: layerStyle,
         children: (
             <div className={styles.mainTextContainer}>

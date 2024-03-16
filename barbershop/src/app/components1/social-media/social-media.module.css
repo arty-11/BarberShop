@@ -11,15 +11,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 55em;
+    /* height: 55em; */
 }
 
 .textFlexContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 2em;
-    width: 30%;
+    /* row-gap: 2em; */
+    /* width: 30%; */
 }
 
 .textFlexContainer div:first-child {
@@ -30,8 +30,8 @@
     background-color: #f4d1ed;
     text-align: center;
     line-height: 2.5;
-    width: 80%;
-    font-size: 1.4rem;
+    /* width: 80%; */
+    /* font-size: 1.4rem; */
 }
 
 .galleryGridContainer {
@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30em;
+    /* height: 30em; */
 }
 
 .videoFlexContainer > div {
@@ -91,23 +91,62 @@
         width: 90%;
     }
 
+    .videoFlexContainer {
+        height: 20em;
+    }
+
     .textFlexContainer div:last-child {
-        width: initial;
         font-size: 1rem;
+    }
+
+    .textFlexContainer {
+        justify-content: space-evenly;
+        height: 100%;
     }
 
     .textGalleryFlexContainer {
         flex-direction: column;
-        justify-content: space-evenly;
-        height: 55em;
-        border: 1px solid red;
+        height: 28em;
+    }
+
+    .galleryGridContainer {
+        display: none;
     }
 
     .header {
         font-size: 2rem;
-        margin-top: 2em;
+    }
+}
+
+@media (width >= 320px) {
+    .textFlexContainer {
+        width: 80%;
+    }
+}
+
+@media (width >= 460px) {
+    .videoFlexContainer {
+        height: 25em;
     }
 
+    .videoFlexContainer > div {
+        height: 60%;
+        width: 80%;
+    }
+}
+
+@media (width >= 640px) {
+    .videoFlexContainer {
+        height: 25em;
+    }
+
+    .videoFlexContainer > div {
+        height: 60%;
+        width: 80%;
+    }
+}
+
+@media (width >= 768px) {
     /* .galleryGridContainer {
         display: grid;
         align-items: center;
@@ -121,17 +160,24 @@
         height: 6em;
         margin-inline: 2em;
     } */
-}
 
-@media (width >= 640px) {
+    .videoFlexContainer {
+        height: 25em;
+    }
+
     .videoFlexContainer > div {
-        height: 80%;
-    }   
+        height: 70%;
+        width: 70%;
+    }
 }
 
 @media (width >= 1024px) {
+    .videoFlexContainer {
+        height: 30em;
+    }
     .videoFlexContainer > div {
-        width: 50em;
+        height: 80%;
+        width: 40em;
     }    
 }
 
