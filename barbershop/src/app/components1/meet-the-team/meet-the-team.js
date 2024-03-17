@@ -11,17 +11,17 @@ export default function MeetTheTeam() {
 
   const barberNames = ["Arty", "Andy", "John"];
 
-  const [container1Hover, setContainer1Hover] = useState(false);
-  const [container2Hover, setContainer2Hover] = useState(false);
-  const [container3Hover, setContainer3Hover] = useState(false);
+  const [img1Hover, setImg1Hover] = useState(false);
+  const [img2Hover, setImg2Hover] = useState(false);
+  const [img3Hover, setImg3Hover] = useState(false);
 
     return (
       <section aria-labelledby="meet-the-team" className={styles.sectionContainer}>
             <h2 id="meet-the-team" className={["headingStyle", styles.mainHeading].join(" ")}>The Hair Lounge Family</h2>
             <div className={styles.flexContainer}>
-                  <Container styles={styles} setContainerNameHover={setContainer1Hover} containerNameHover={container1Hover} barberName={barberNames[0]} />
-                  <Container styles={styles} setContainerNameHover={setContainer2Hover} containerNameHover={container2Hover} barberName={barberNames[1]} />
-                  <Container styles={styles} setContainerNameHover={setContainer3Hover} containerNameHover={container3Hover} barberName={barberNames[2]} />
+                  <Container styles={styles} setImgNumHover={setImg1Hover} imgNumHover={img1Hover} barberName={barberNames[0]} />
+                  <Container styles={styles} setImgNumHover={setImg2Hover} imgNumHover={img2Hover} barberName={barberNames[1]} />
+                  <Container styles={styles} setImgNumHover={setImg3Hover} imgNumHover={img3Hover} barberName={barberNames[2]} />
             </div>
       </section>
   )

@@ -28,9 +28,17 @@
     line-height: 2.5;
 }
 
+.galleryGridContainer {
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    gap: 0.5em;
+    width: 60%;
+    max-width: 700px;
+}
+
 .galleryGridContainer > div {
     overflow: hidden;
     position: relative;
+    padding: 30% 10%;
 }
 
 .galleryGridContainer div:first-child {
@@ -161,13 +169,6 @@
 
     .galleryGridContainer {
         display: grid;
-        grid-template-columns: repeat(3, minmax(120px, 1fr));
-        width: 60%;
-        gap: 0.5em;
-    }
-
-    .galleryGridContainer > div {
-        padding: 30% 10%;
     }
 
     .videoFlexContainer {
@@ -181,10 +182,6 @@
 }
 
 @media (width >= 1024px) {
-    .galleryGridContainer {
-        max-width: 700px;
-    }
-    
     .videoFlexContainer {
         height: 30em;
     }
@@ -198,7 +195,6 @@
         margin-inline: auto;
         width: 70%;
     }
-
 }
 
 @media (width >= 1280px) {
